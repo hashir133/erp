@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel | Campus Management Solution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-page">
+    <main class="admin-shell">
+        <section class="admin-card" aria-labelledby="adminTitle">
+            <p class="admin-kicker">CAMPUS MANAGEMENT SOLUTION</p>
+            <h1 id="adminTitle">Admin Panel</h1>
+            <p class="admin-intro">Manage the dashboard photo shown to users.</p>
+
+            <div class="admin-photo-preview">
+                <img id="adminPhotoPreview" src="images/dashboard.png" alt="Current dashboard photo">
+            </div>
+
+            <p class="admin-status" id="adminPhotoStatus">Default dashboard photo is active.</p>
+
+            <div class="admin-actions">
+                <input id="dashboardPhotoInput" type="file" accept="image/png, image/jpeg, image/webp" hidden>
+                <label class="upload-button" for="dashboardPhotoInput">Choose Photo</label>
+                <button type="button" class="delete-button" id="deletePhotoButton">Delete Photo</button>
+            </div>
+
+            <p class="admin-message" id="adminMessage" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

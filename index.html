@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes"
+    >
+
+    <title>Campus Management Solution</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- =========================
+             LOGIN SCREEN
+             ========================= -->
+        <section class="login-screen">
+
+            <!-- Background -->
+            <div class="campus-bg"></div>
+
+
+            <!-- Login Card -->
+            <div class="login-card">
+
+                <div class="portal-title">
+                    Campus Management Solution
+                </div>
+
+
+                <!--
+                    IMPORTANT FOR PASSWORD MANAGERS:
+                    Keep autocomplete="on"
+                -->
+                <form
+                    id="loginForm"
+                    method="post"
+                    action="#"
+                    autocomplete="on"
+                    novalidate
+                >
+
+                    <!-- =========================
+                         USERNAME / LOGIN ID
+                         ========================= -->
+
+                    <input
+                        id="username"
+                        name="username"
+                        type="text"
+                        placeholder="Login ID"
+
+                        autocomplete="username"
+
+                        autocapitalize="none"
+                        autocorrect="off"
+                        spellcheck="false"
+
+                        inputmode="text"
+
+                        required
+                    >
+
+
+                    <!-- =========================
+                         PASSWORD
+                         ========================= -->
+
+                    <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        placeholder="Password"
+
+                        autocomplete="current-password"
+
+                        required
+                    >
+
+
+                    <!-- =========================
+                         LOGIN BUTTON
+                         ========================= -->
+
+                    <button
+                        type="submit"
+                        id="loginButton"
+                    >
+                        Log in
+                    </button>
+
+
+                    <!-- =========================
+                         RESET PASSWORD
+                         ========================= -->
+
+                    <button
+                        type="button"
+                        class="reset"
+                        id="resetPassword"
+                    >
+                        Reset Password
+                    </button>
+
+
+                    <!-- Error -->
+                    <p id="error"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DASHBOARD
+             ========================= -->
+
+        <section
+            id="dashboard"
+            class="dashboard hidden"
+        >
+
+            <div class="dashboard-viewer">
+
+                <img
+                    id="dashboardImage"
+                    src="images/dashboard.png"
+                    class="dashboard-image"
+                    alt="Student Dashboard"
+                >
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
